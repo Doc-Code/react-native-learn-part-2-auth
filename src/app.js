@@ -33,7 +33,7 @@ switch (this.state.loggedIn) {
   return (
   <Card>
     <CardSection>
-      <Button>
+      <Button onPress={() => firebase.auth().signOut()}>
         Log Out
       </Button>
     </CardSection>
